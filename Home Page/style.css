@@ -1,3 +1,61 @@
+/* <!-- Responsive viewport --> */
+@media only screen and (min-width: 320px){
+    body{
+        background-image: url(Seamless\ background.png);
+        background-repeat: repeat;
+        font-size: auto;
+    }
+    .carousel{
+        margin: auto;
+        display: block;
+        padding-left: auto;
+        padding-right: auto;
+        width: 40%;
+    }
+}
+
+/* Code for Information */
 h1{
-    background-color: blue;
+    text-align: center;
+    padding-top: 120px;
+}
+
+h1 span{
+    background-color: #FFDBE9;
+    padding-inline: 60px;
+    border-radius: 20px;
+    font-size: 100px;
+}
+
+.title{
+    margin-top: 80px;
+    text-align: center;
+}
+
+h2 span{
+    background-color: #FFDBE9;
+    padding-inline: 40px;
+    border-radius: 15px;
+    font-size: 50px;
+}
+
+/* Code below is for the carousel pictures */
+.item{
+    margin-top: 100px;
+    padding: 50px;
+    padding-left: 250px;
+    display: block;
+    background-color: #B9D8ED;
+}
+
+.picture{
+    padding: 10px;
+}
+
+.carousel{
+    margin: auto;
+    display: block;
+    padding-left: auto;
+    padding-right: auto;
+    width: 100%;
 }
