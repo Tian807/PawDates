@@ -43,9 +43,11 @@ h2 span{
 .item{
     margin-top: 100px;
     padding: 50px;
-    padding-left: 250px;
+    /* This padding code below - determines where the pictures are placed - kinda of difficult to know due to different screen sizes of users */
+    padding-left: 150px;
     display: block;
     background-color: #B9D8ED;
+    margin-bottom: 100px;
 }
 
 .picture{
@@ -58,4 +60,27 @@ h2 span{
     padding-left: auto;
     padding-right: auto;
     width: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
