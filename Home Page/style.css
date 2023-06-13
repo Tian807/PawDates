@@ -1,7 +1,7 @@
 /* <!-- Responsive viewport --> */
 @media only screen and (min-width: 320px){
     body{
-        background-image: url(/Seamless\ background.png);
+        background-image: url(/PetDates/Seamless\ background.png);
         background-repeat: repeat;
         font-size: auto;
     }
