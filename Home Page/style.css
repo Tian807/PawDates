@@ -28,8 +28,13 @@
 .button{
     margin-bottom: 200px;
     margin-right: 30px;
+    font-family: 'Delicious Handrawn', cursive;   
 }
 
 main{
     margin-top: 50px;
+}
+
+h1{
+  font-family: 'Delicious Handrawn', cursive;
 }
