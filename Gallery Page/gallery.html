@@ -6,9 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <link rel="stylesheet" href="gallery.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Code below is for NAV BAR -->
+    
+    <nav class="navbar navbar-expand-lg bg-light bg-transparent">
+        <div class="container">
+            <!-- brand + logo -->
+            <a class="navbar-brand" href="#">
+                <img src="../Assets/paw.png" alt="PawDates Logo" width="50" height="50">
+                <a class="text-decoration-none flex-lg-row px-2 py-1 rounded-4 text-white fs-3"
+                    style="background-color:#67B8F2">
+                    PawDates</a>
+            </a>
+
+            <!-- toggle -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- SideBar -->
+            <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <!-- SideBar Header -->
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PawDates</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                </div>
+                <!-- SideBar Body -->
+                <div class="offcanvas-body d-flex flex-lg-row flex-column p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center fs-3 flex-grow-1 pe-3">
+
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" aria-current="page" href="../Home Page/index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="../Discover Page/discover.html">Discover</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="../Chat Page/chat.html">Chat</a>
+                        </li>
+                    </ul>
+                    <!-- Profile pic and notifications -->
+
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- Code below is for BACKGROUND (Look at the code in the CSS file)-->
     
     <!-- Code below is for title information -->
@@ -52,5 +104,8 @@
 
     <!-- Code below is for SCROLL BAR OR PAGE INDEX -->
     <!-- Code below is for FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 </html>
