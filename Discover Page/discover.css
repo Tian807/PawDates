@@ -1,0 +1,28 @@
+/* <!-- Responsive viewport --> */
+@media only screen and (min-width: 320px){
+    #carouselExampleControlsNoTouching{
+        margin-left: 200px;
+        margin-right: 200px;
+        background-color: white;
+        margin-top: 100px;
+        border-radius: 30px;
+    }
+    .carousel-inner{
+        padding: 50px;
+        /* display: block;
+        margin-left: 25%;
+        margin-right: 0%; */
+    }
+   .carousel-control-prev{
+        margin-left: 200px;
+
+    }
+    .carousel-control-next{
+        margin-right: 200px;
+    }
+    img{
+        border-radius: 20px;
+        margin: 0px 320px;
+    }
+
+}
