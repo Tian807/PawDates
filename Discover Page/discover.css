@@ -26,3 +26,17 @@
     }
 
 }
+
+/* Name and Location text */
+.text-block {
+    position:absolute;
+    bottom: 20px;
+    left: 340px;
+    background-color: #68B8F2;
+    opacity: 0.8;
+    color: white;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
