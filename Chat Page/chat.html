@@ -6,11 +6,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
     <link rel="stylesheet" href="chat.css">
+    <!-- Link to bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 </head>
 <body>
     <!-- Code below is for NAV BAR -->
     <!-- Code below is for BACKGROUND -->
-    <!-- Code below is for MESSAGE SECTION -->
-    <!-- Code below is for CHAT TEXT BOX -->
+    <!-- Code below is for LAST MESSAGE SECTION -->
+    <section style="background-color: lightblue;">
+        <div class="container py-5">
+      
+          <div class="row">
+      
+            <!-- <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0"> -->
+            <div class="header">
+                <!-- font-weight-bold text-center -->
+                <!-- TITLE -->
+                <h5 class="title">
+                  <img src="/Assets/paw.png" alt="logo" width="50" height="50"> Messages</h5>
+               
+                <!-- HOME button -->
+                <button class="arrow">
+                  <a class="link" href="gallery.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z"/>
+                    </svg>
+                  </a>
+                </button>
+
+                <!-- REPORT button -->
+                <button class="flag"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag-fill" viewBox="0 0 16 16">
+                  <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001"/>
+                </svg></button>
+
+              <!-- <img class="back" src="https://icons.veryicon.com/png/o/miscellaneous/eva-fill/arrow-back-11.png" alt="back arrow" width="50" height="50"> -->
+            </div> 
+      
+              <div class="card">
+                <div class="card-body">
+      
+                  <ul class="list-unstyled mb-0">
+                    <li class="p-2 border-bottom" style="background-color: #eee;">
+                      <a href="#!" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-8.webp" alt="avatar"
+                            class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0">BOT</p>
+                            <p class="small text-muted">Hello, Are you there?</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Just now</p>
+                          <span class="badge bg-danger float-end">1</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom">
+                      <a href="#!" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-1.webp" alt="avatar"
+                            class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0">Danny Smith</p>
+                            <p class="small text-muted">Lorem ipsum dolor sit.</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">5 mins ago</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom">
+                      <a href="#!" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-2.webp" alt="avatar"
+                            class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0">Alex Steward</p>
+                            <p class="small text-muted">Lorem ipsum dolor sit.</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom">
+                      <a href="#!" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-3.webp" alt="avatar"
+                            class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0">Ashley Olsen</p>
+                            <p class="small text-muted">Lorem ipsum dolor sit.</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom">
+                      <a href="#!" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-4.webp" alt="avatar"
+                            class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0">Kate Moss</p>
+                            <p class="small text-muted">Lorem ipsum dolor sit.</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2 border-bottom">
+                      <a href="#!" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-5.webp" alt="avatar"
+                            class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0">Lara Croft</p>
+                            <p class="small text-muted">Lorem ipsum dolor sit.</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">Yesterday</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="p-2">
+                      <a href="#!" class="d-flex justify-content-between">
+                        <div class="d-flex flex-row">
+                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp" alt="avatar"
+                            class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" width="60">
+                          <div class="pt-1">
+                            <p class="fw-bold mb-0">Brad Pitt</p>
+                            <p class="small text-muted">Lorem ipsum dolor sit.</p>
+                          </div>
+                        </div>
+                        <div class="pt-1">
+                          <p class="small text-muted mb-1">5 mins ago</p>
+                          <span class="text-muted float-end"><i class="fas fa-check" aria-hidden="true"></i></span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+      
+                </div>
+              </div>
+      
+            </div>
+    </section>
+
+    <!-- Code below is for CHAT SECTION -->
+
+    <section class="msger">
+        <header class="msger-header">
+          <div class="msger-header-title">
+            <i class="fas fa-comment-alt"></i> Chat
+          </div>
+          <div class="msger-header-options">
+            <span><i class="fas fa-cog"></i></span>
+          </div>
+        </header>
+      
+        <main class="msger-chat">
+          <div class="msg left-msg">
+            <div
+             class="msg-img"
+             style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"
+            ></div>
+      
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">BOT</div>
+                <div class="msg-info-time">12:45</div>
+              </div>
+      
+              <div class="msg-text">
+                Hi, Welcome to PawDates! Go ahead and send me a message. 😄
+              </div>
+            </div>
+          </div>
+      
+          <div class="msg right-msg">
+            <div
+             class="msg-img"
+             style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"
+            ></div>
+      
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">PawDates</div>
+                <div class="msg-info-time">12:46</div>
+              </div>
+      
+              <div class="msg-text">
+                You can change your name in JS section!
+              </div>
+            </div>
+          </div>
+        </main>
+      
+        <form class="msger-inputarea">
+          <input type="text" class="msger-input" placeholder="Enter your message...">
+          <button type="submit" class="msger-send-btn">Send</button>
+        </form>
+
+    </section>
+
+    <!-- Link to JavaScript file -->
+    <script src="chat.js"></script>
+
+    <!-- Link to bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
 </body>
 </html>
