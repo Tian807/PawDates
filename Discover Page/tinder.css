@@ -1,0 +1,54 @@
+body{
+    background-color: pink;
+}
+
+.item{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* img{
+    border-radius: 20px;
+    background-color: white;
+} */
+
+.picture{
+    background-color: white;
+    padding: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 20px;
+
+}
+
+img{
+    border-radius: 30px;
+}
+
+.previous{
+    background: inherit
+}
+
+.previous:hover{
+    opacity: 1;
+}
+
+.next{
+    background: inherit;
+    margin-left: 100px;
+}
+
+.next:hover{
+    opacity: 1;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    opacity: 0.3;
+    position: relative;
+    transform: translate(0%, -180%);
+    margin-right: 100px;
+}
