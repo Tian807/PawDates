@@ -1,0 +1,15 @@
+/* NavBar */
+.navbar a{
+    font-family: 'Delicious Handrawn', cursive;
+  }
+  
+  .navbar{
+    background-color: #E9E9E9 !important;
+  }
+  
+  @media (max-width:px)  {
+    .sidebar{
+      background-color: #e9e9e967;
+      backdrop-filter: blur(10px);
+    }
+  }
