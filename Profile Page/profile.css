@@ -1,15 +1,50 @@
 /* NavBar */
-.navbar a{
-    font-family: 'Delicious Handrawn', cursive;
+.navbar a {
+  font-family: 'Delicious Handrawn', cursive;
+}
+
+.navbar {
+  background-color: #E9E9E9 !important;
+}
+
+@media (max-width:px) {
+  .sidebar {
+    background-color: #e9e9e967;
+    backdrop-filter: blur(10px);
   }
-  
-  .navbar{
-    background-color: #E9E9E9 !important;
-  }
-  
-  @media (max-width:px)  {
-    .sidebar{
-      background-color: #e9e9e967;
-      backdrop-filter: blur(10px);
-    }
-  }
+}
+
+h2 {
+  font-family: 'Delicious Handrawn', cursive;
+}
+
+h5 {
+  font-family: 'Delicious Handrawn', cursive;
+}
+
+p {
+  font-family: 'Delicious Handrawn', cursive;
+  font-size: large;
+}
+
+.button a {
+  font-family: 'Delicious Handrawn', cursive;
+}
+
+.arrow {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  position: relative;
+  scale: 300%;
+  opacity: 0.6;
+  top: 40px;
+  /* Code below for when the screen gets smaller - the position of the arrow */
+  transform: translate(-150%);
+}
+
+.arrow:hover {
+  color: black;
+  opacity: 1;
+}

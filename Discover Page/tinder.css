@@ -19,7 +19,9 @@
       backdrop-filter: blur(10px);
     }
   }
-  
+
+/* Tinder carousel */
+
 .tinder {
     width: 100vw;
     height: 100vh;
@@ -100,8 +102,17 @@
 }
 
 .tinder--card img {
-    max-width: 100%;
+    margin-top: 25px;
+    max-width: 90%;
     pointer-events: none;
+}
+
+.tinder--card h3{
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.tinder--card p{
+    font-family: 'Delicious Handrawn', cursive;
 }
 
 .tinder--card h3 {
