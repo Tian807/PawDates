@@ -1,37 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tinder</title>
     <link rel="stylesheet" href="/Discover Page/tinder.css">
+
+    <!-- Linking to Bootstrap, font style, icons and hammer.js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
 </head>
+
 <body>
-    <section class="item">
-        <div class="picture">
-
-            <button class="previous">
-                <img src="https://cdn-icons-png.flaticon.com/512/458/458594.png" alt="heart button" width="105" height="105">
-            </button>
-    
-            <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcREj22c-wMNL5IDmU99v8G7voUl17Yxm0JJqMLqttdPT4DnaB99zqVK7HWiNzjP3aZnzCEf-ikAqb2yiDk" alt="..." width="600px" height="500px">
+    <div class="tinder" style="background-color: pink;" >
         
-            
-            <button class="next">
-                <img src="https://cdn.pixabay.com/photo/2020/09/30/07/48/heart-5614865_1280.png" alt="heart button" width="100" height="100">
-            </button>
-
+        <!-- Code below is for NAV BAR -->
+        <nav class="navbar navbar-expand-lg bg-light bg-transparent">
+            <div class="container">
+                <!-- brand + logo -->
+                <a class="navbar-brand">
+                    <img src="../Assets/paw.png" alt="PawDates Logo" width="50" height="50">
+                    <a class="text-decoration-none flex-lg-row px-2 py-1 rounded-4 text-white fs-3"
+                        style="background-color:#67B8F2">
+                        PawDates</a>
+                </a>
     
+                <!-- toggle -->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- SideBar -->
+                <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <!-- SideBar Header -->
+                    <div class="offcanvas-header border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PawDates</h5>
+                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+                        </button>
+                    </div>
+                    <!-- SideBar Body -->
+                    <div class="offcanvas-body d-flex flex-lg-row flex-column p-4 p-lg-0">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-3 flex-grow-1 pe-3">
+    
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link active" aria-current="page" href="tinder.html">Discover</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="../Gallery Page/gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="../Chat Page/chat.html">Chat</a>
+                            </li>
+                        </ul>
+                        <!-- Profile pic and notifications -->
+                        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                            <a href="#" class="fs-4 text-decoration-none text-black"><i class="bi bi-bell-fill"></i></a>
+                            <a class="nav-link p-0" href="#">
+                                <img src="../Assets/undine-tackmann-8mxSINYFoSw-unsplash.jpg"
+                                    class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" alt="avatar image"
+                                    width="50" height="50"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Code below is for Tinder style carousel -->
+        <div class="tinder--status">
+            <i class="bi bi-suit-heart-fill"></i>
+            <i class="bi bi-x-circle-fill"></i>
         </div>
+      
+        <div class="tinder--cards">
+          <div class="tinder--card">
+            <img src="https://placedog.net/800/640?id=14">
+            <h3>Demo card 1</h3>
+            <p>This is a demo for Tinder like swipe cards</p>
+          </div>
+          <div class="tinder--card">
+            <img src="https://placedog.net/800/640?id=16">
+            <h3>Demo card 2</h3>
+            <p>This is a demo for Tinder like swipe cards</p>
+          </div>
+          <div class="tinder--card">
+            <img src="https://placedog.net/800/640?id=86">
+            <h3>Demo card 3</h3>
+            <p>This is a demo for Tinder like swipe cards</p>
+          </div>
+          <div class="tinder--card">
+            <img src="https://placedog.net/800/640?id=108">
+            <h3>Demo card 4</h3>
+            <p>This is a demo for Tinder like swipe cards</p>
+          </div>
+          <div class="tinder--card">
+            <img src="https://placedog.net/800/640?id=137">
+            <h3>Demo card 5</h3>
+            <p>This is a demo for Tinder like swipe cards</p>
+          </div>
+        </div>
+      
+        <div class="tinder--buttons">
+          <button id="nope"><i class="bi bi-x-circle-fill"></i></button>
+          <button id="love"><i class="bi bi-suit-heart-fill"></i></button>
+        </div>
+      </div>
+
+    <script src="tinder.js"></script>
+
+    <!-- Code below is for FOOTER -->
+    <section class="footer">
+        <footer class="text-center text-white" style="background-color: #67B8F2;">
+            <!-- Grid container -->
+            <div class="container p-3 pb-0">
+                <!-- Section: CTA -->
+                <section class="">
+                    <p class="d-flex justify-content-center align-items-center">
+                        <span class="mx-3">
+                            <a href="#"><i class="bi bi-twitter text-white fs-3 mx-2"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-white fs-3 mx-2"></i></a>
+                            <a href="#"><i class=" bi bi-instagram text-white fs-3 mx-2"></i></a>
+                        </span>
+                    </p>
+                </section>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                Copyright &copy 2023 All rights reserved | Made with <i class="bi bi-suit-heart-fill"></i> Tian & Yenny
+            </div>
+        </footer>
     </section>
-    
 
-
-
-
-
-    <!-- <img src="https://cdn.shopify.com/s/files/1/0054/2569/2758/articles/Puppy_Big_Wide_World.jpg?v=1611665413" class="img-thumbnail" alt="..." width="500px" height="400px"> -->
-    <!-- <img src="https://dogsbestlife.com/wp-content/uploads/2022/06/cutest-dog-breeds-scaled-e1655990275393.jpeg" class="img-thumbnail" alt="..." width="500px" height="400px"> -->
-
+    <!-- Link to bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
