@@ -121,6 +121,8 @@ button {
 .gallery .btn {
   position: absolute;
   transform: translate(-120%, 260%);
+  border: none;
+
 }
 
 .btn:hover{
