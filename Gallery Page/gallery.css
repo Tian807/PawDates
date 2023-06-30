@@ -48,8 +48,12 @@ body{
   opacity: 0.6;
 }
 
+.profile{
+  opacity: 0.6;
+}
+
 .profile:hover{
-  opacity: 0.8;
+  opacity: 1;
 }
 
   

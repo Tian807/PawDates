@@ -39,8 +39,12 @@ p {
   opacity: 0.6;
 }
 
-.profile:hover{
+.profile{
   opacity: 0.6;
+}
+
+.profile:hover{
+  opacity: 1;
 }
 
 .arrow{
