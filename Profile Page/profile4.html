@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body style="background-color: #B8D8EE;">
+
+    <!-- Code below is for NAV BAR -->
+    <nav class="navbar navbar-expand-lg bg-light bg-transparent">
+        <div class="container">
+            <!-- brand + logo -->
+            <a class="navbar-brand">
+                <img src="../Assets/paw.png" alt="PawDates Logo" width="50" height="50">
+                <a class="text-decoration-none flex-lg-row px-2 py-1 rounded-4 text-white fs-3"
+                    style="background-color:#67B8F2">
+                    PawDates</a>
+            </a>
+
+            <!-- toggle -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- SideBar -->
+            <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <!-- SideBar Header -->
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PawDates</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                </div>
+                <!-- SideBar Body -->
+                <div class="offcanvas-body d-flex flex-lg-row flex-column p-4 p-lg-0">
+                    <ul class="navbar-nav justify-content-center align-items-center fs-3 flex-grow-1 pe-3">
+
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="../Discover Page/tinder.html">Discover</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="../Gallery Page/gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="../Chat Page/chat.html">Chat</a>
+                        </li>
+                    </ul>
+                    <!-- Profile pic and notifications -->
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                        <a href="#" class="fs-4 text-decoration-none text-black"><i class="bi bi-bell-fill"></i></a>
+                        <a class="nav-link p-0" href="#">
+                            <img src="../Assets/undine-tackmann-8mxSINYFoSw-unsplash.jpg"
+                                class="rounded-circle d-flex align-self-center me-3 shadow-1-strong" alt="avatar image"
+                                width="50" height="50"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Code below is for PROFILE -->
+    <section class="vh-100" style="background-color: #B8D8EE;">
+        <div class="container py-3 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-md-12 col-xl-8">
+
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body text-center">
+                            <div>
+                                <!-- BACK button -->
+                                <button class="arrow">
+                                    <a class="link" href="../Gallery Page/gallery.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                                        </svg>
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="mt-7 mb-4">
+                                <img src="https://placedog.net/800/640?id=21" alt="avatar"
+                                    class="rounded-circle img-fluid" width="100" height="100" />
+                            </div>
+
+                            <h2 class="mb-2">Buster, 3</h2>
+                            <p class="text-muted mb-4">Breed: French Bulldog <span class="mx-2">|</span>
+                                <i class="bi bi-geo-alt-fill"></i> 0.1 miles away<span class="mx-2">|</span>
+                                <i class="bi bi-gender-male"></i> Male
+                            </p>
+                            <div class="mb-4 pb-2">
+
+                                <div class="card-body p-4 text-black">
+                                    <div class="mb-2">
+                                        <h5> About</h5>
+                                        <div class="p-4" style="background-color: #f8f9fa;">
+                                            <p class="font-italic mb-1"><i
+                                                    class="bi bi-suit-heart-fill text-danger"></i> Soft Toys,
+                                                Playing Fetch, Treats </p>
+                                            <p class="font-italic mb-1"><i class="bi bi-x fw-bold"></i> Swimming, Baths
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="../Chat Page/chat.html">
+                                    <button type="button" class="btn text-white btn-rounded btn-lg"
+                                        style="background-color: #67B8F2;font-family: 'Delicious Handrawn', cursive;">
+                                        Start Chat
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Code below is for FOOTER -->
+    <section class="footer">
+        <footer class="text-center text-white" style="background-color: #67B8F2;">
+            <!-- Grid container -->
+            <div class="container p-3 pb-0">
+                <!-- Section: CTA -->
+                <section class="">
+                    <p class="d-flex justify-content-center align-items-center">
+                        <span class="mx-3">
+                            <a href="#"><i class="bi bi-twitter text-white fs-3 mx-2"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-white fs-3 mx-2"></i></a>
+                            <a href="#"><i class=" bi bi-instagram text-white fs-3 mx-2"></i></a>
+                        </span>
+                    </p>
+                </section>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                Copyright &copy 2023 All rights reserved | Made with <i class="bi bi-suit-heart-fill"></i> Tian &
+                Yenny
+            </div>
+        </footer>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
