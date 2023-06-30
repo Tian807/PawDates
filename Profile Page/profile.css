@@ -31,23 +31,86 @@ p {
   font-family: 'Delicious Handrawn', cursive;
 }
 
-.arrow {
+.bell:hover{
+  opacity: 1;
+}
+
+.bell{
+  opacity: 0.6;
+}
+
+.profile:hover{
+  opacity: 0.6;
+}
+
+.arrow{
+  position:relative;
   border: none;
   cursor: pointer;
   appearance: none;
   background-color: inherit;
-  position: relative;
   scale: 300%;
-  opacity: 0.6;
+  /* Code below is for when the screen gets smaller - the position of the arrow */
+  transform: translate(-185%);
   top: 40px;
-  /* Code below for when the screen gets smaller - the position of the arrow */
-  transform: translate(-150%);
 }
 
-.arrow:hover {
-  color: black;
+
+.link:hover{
+  background: inherit;
+  color: #67B8F2;
+  opacity: 1;
+
+}
+
+.flag{
+  position:relative;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  scale: 250%;
+  opacity: 0.3;
+  /* Code below is for when the screen gets smaller - the position of the arrow */
+  transform: translate(230%);
+  top: 40px;
+}
+
+.flag:hover{
+  background: inherit;
+  color: rgb(199, 90, 90);
   opacity: 1;
 }
+
+.link{
+  color: black;
+  opacity: 0.3;
+
+}
+
+/* Responsive viewport */
+
+@media only screen and (min-width: 1200px){
+  /* This is when the screen gets bigger */
+  .arrow{
+    transform: translate(-400%);
+  }
+
+  .flag{
+    transform: translate(480%);
+  }
+}
+
+/* @media only screen and (min-width: 768px){
+  .arrow{
+    transform: translate(-330%);
+  }
+
+} */
+
+
+
+
 
 /* Code below for FOOTER */
 
@@ -70,4 +133,23 @@ p {
 }
 .bi-instagram:hover{
   opacity: 1;
+}
+
+/* Code below for PROFILE */
+
+.start:hover{
+  opacity: 0.8;
+}
+
+.card{
+  margin-bottom: 80px;
+}
+
+.bi-gender-female {
+  color: palevioletred;
+  font-weight: bolder;
+}
+
+.bi-gender-male{
+  color: rgb(79, 181, 221);
 }
