@@ -6,31 +6,52 @@
         background-repeat: repeat;
         background-size: contain;
     } */
+
+  /* .item{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  } */
 }
 
 /* This code is background colour choices - this code doesn't work */
 body{
-    background-color: #EBE1D0;
-    background-color: #B8D8EE;
-    background-color: #D9D9D9;
-    background-color: #EFB8CE;
+  background-color: #EBE1D0;
+  background-color: #B8D8EE;
+  background-color: #D9D9D9;
+  background-color: #EFB8CE;
 }
 
 /* NavBar */
 .navbar a{
-    font-family: 'Delicious Handrawn', cursive;
-  }
-  
-  .navbar{
-    background-color: #E9E9E9 !important;
-  }
-  
-  @media (max-width:px)  {
-    .sidebar{
-      background-color: #e9e9e967;
-      backdrop-filter: blur(10px);
-    }
+  font-family: 'Delicious Handrawn', cursive;
 }
+
+.navbar{
+  background-color: #E9E9E9 !important;
+}
+
+@media (max-width:px)  {
+  .sidebar{
+    background-color: #e9e9e967;
+    backdrop-filter: blur(10px);
+  }
+}
+
+.bell:hover{
+  opacity: 1;
+}
+
+.bell{
+  opacity: 0.6;
+}
+
+.profile:hover{
+  opacity: 0.8;
+}
+
   
 /* Code below is for the INFORMATION TITLE */
 .info{
@@ -38,28 +59,50 @@ body{
 }
 
 h2{
-    text-align: center; 
-    font-family: 'Delicious Handrawn', cursive;
+  text-align: center; 
+  font-family: 'Delicious Handrawn', cursive;
 }
 
 h2 span{
-    background-color: white;
-    border-radius: 20px;
-    padding-inline: 60px;
-    font-size: 40px;
+  background-color: white;
+  border-radius: 20px;
+  padding-inline: 60px;
+  font-size: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.bi-suit-heart-fill{
+  color: rgb(255, 90, 90)
+}
+
+i{
+  margin-right: 15px;
+  margin-left: 10px;
 }
 
 /* Code below is for the POLAROID PICTURES */
 .item{
-    margin-left: 130px;
-    margin-top: 50px;
-    margin-bottom: 100px;
+  /* margin-left: 130px;
+  margin-top: 50px;
+  margin-bottom: 100px; */
+  flex-grow: 1;
+  padding-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1;
+  margin-bottom: 100px;
+
 }
 
 .picture{
-    margin: 20px;
-    padding: 20px 20px 100px 20px;
-    background-color: white;
+  margin: 20px;
+  padding: 20px 20px 100px 20px;
+  background-color: white;
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2)
+
 }
 
 /* Code below is for the HEART ICONS */
@@ -76,6 +119,33 @@ button {
 }
 
 .gallery .btn {
-    position: absolute;
-    transform: translate(-120%, 260%);
+  position: absolute;
+  transform: translate(-120%, 260%);
+}
+
+.btn:hover{
+  opacity: 0.9;
+}
+
+/* Code below for FOOTER */
+
+.bi-twitter{
+  opacity: 0.7;
+}
+.bi-twitter:hover{
+  opacity: 1;
+}
+
+.bi-facebook{
+  opacity: 0.7;
+}
+.bi-facebook:hover{
+  opacity: 1;
+}
+
+.bi-instagram{
+  opacity: 0.7;
+}
+.bi-instagram:hover{
+  opacity: 1;
 }

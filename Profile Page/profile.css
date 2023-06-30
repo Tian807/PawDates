@@ -48,3 +48,26 @@ p {
   color: black;
   opacity: 1;
 }
+
+/* Code below for FOOTER */
+
+.bi-twitter{
+  opacity: 0.7;
+}
+.bi-twitter:hover{
+  opacity: 1;
+}
+
+.bi-facebook{
+  opacity: 0.7;
+}
+.bi-facebook:hover{
+  opacity: 1;
+}
+
+.bi-instagram{
+  opacity: 0.7;
+}
+.bi-instagram:hover{
+  opacity: 1;
+}
