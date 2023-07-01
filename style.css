@@ -23,6 +23,18 @@
     }
   }
 
+  #login{
+    opacity: 0.7;
+  }
+
+  #login:hover{
+    opacity: 1;
+  }
+
+  .signup:hover{
+    opacity: 0.8;
+  }
+
 /* Code for Information and Button */
 
 .button{
