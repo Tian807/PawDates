@@ -56,6 +56,9 @@ body{
   opacity: 1;
 }
 
+#offcanvasNavbar{
+  font-family: 'Delicious Handrawn', cursive;
+}
   
 /* Code below is for the INFORMATION TITLE */
 .info{

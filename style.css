@@ -35,6 +35,10 @@
     opacity: 0.8;
   }
 
+  #offcanvasNavbar{
+    font-family: 'Delicious Handrawn', cursive;
+  }
+
 /* Code for Information and Button */
 
 .button{

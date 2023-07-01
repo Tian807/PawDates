@@ -36,6 +36,10 @@
     opacity: 1;
 }
 
+#offcanvasNavbar{
+    font-family: 'Delicious Handrawn', cursive;
+}
+
 /* Tinder carousel */
 
 .tinder {

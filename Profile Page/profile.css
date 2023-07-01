@@ -92,6 +92,10 @@ p {
 
 }
 
+#offcanvasNavbar{
+  font-family: 'Delicious Handrawn', cursive;
+}
+
 /* Responsive viewport */
 
 @media only screen and (min-width: 1200px){
