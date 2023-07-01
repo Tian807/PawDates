@@ -2,84 +2,46 @@
     body{
         background-image: url(/Assets/coming\ soon.jpg);
         background-size: cover;
-        background-size: 100vw 92vh;
+        background-size: 100vw 100vh;
         background-repeat: no-repeat;
-        background-position: 0px 76px;
+        /* background-position: 0px 76px; */
             /* padding: 50px; */
-
     }
 
     h1{
-        padding-top: 320px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        font-size: 60px;
         font-family: 'Delicious Handrawn', cursive;
-      
+        margin-left: 50px;
     }
 
 }
 
-/* NavBar */
-.navbar a {
-    font-family: 'Delicious Handrawn', cursive;
-}
-
-.navbar {
-    background-color: #E9E9E9 !important;
-}
-
-@media (max-width:px) {
-    .sidebar {
-        background-color: #e9e9e967;
-        backdrop-filter: blur(10px);
-    }
-}
-
-h2 {
-    font-family: 'Delicious Handrawn', cursive;
-}
-
-h5 {
-    font-family: 'Delicious Handrawn', cursive;
-}
-
-p {
-    font-family: 'Delicious Handrawn', cursive;
-    font-size: large;
-}
-
-.button a {
-    font-family: 'Delicious Handrawn', cursive;
-}
-
-.bell:hover{
-    opacity: 1;
-}
-
-.bell{
-    opacity: 0.6;
-}
-
-.profile{
-    opacity: 0.6;
-}
-
-.profile:hover{
-    opacity: 1;
-}
 
 
 /* Title */
-main:hover{
+/* h1:hover{
     opacity: 0.6;
-    
-}
+} */
 
 main{
     color: #67B8F2;
-    margin-bottom: 340px;
+    /* margin-bottom: 340px; */
+
+    padding-top: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 60px;
+
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.button span{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.button:hover{
+    opacity: 0.8;
 }
 
