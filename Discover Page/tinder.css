@@ -20,11 +20,11 @@
 }
 }
 
-.bell:hover{
+#bell:hover{
     opacity: 1;
 }
 
-.bell{
+#bell{
     opacity: 0.6;
 }
 

@@ -74,3 +74,15 @@ function formatDate(date) {
 function random(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
 }
+
+
+// Report User Action Button
+
+function displayAlert() {
+  prompt ('Enter the account you wish to report')
+  console.log('Clicked the button')
+}
+
+let ourButton = document.getElementById("flag")
+ourButton.addEventListener('click', displayAlert)
+

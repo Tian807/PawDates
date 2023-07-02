@@ -194,7 +194,7 @@ body {
   transform: translate(30%, -70%);
 }
 
-.flag{
+#flag{
   position:relative;
   border: none;
   cursor: pointer;
@@ -206,7 +206,7 @@ body {
   transform: translate(180%);
 }
 
-.flag:hover{
+#flag:hover{
   background: inherit;
   color: rgb(199, 90, 90);
   opacity: 1;
@@ -250,10 +250,14 @@ body {
 @media only screen and (min-width: 1500px){
   /* This is when the screen gets bigger */
   .arrow{
-    transform: translate(-350%);
+    transform: translate(-400%);
   }
- .flag{
+ #flag{
     transform: translate(450%, -0%);
   }
 }
 
+
+#profile:hover{
+  opacity: 0.6;
+}

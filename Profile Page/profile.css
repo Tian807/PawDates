@@ -31,11 +31,11 @@ p {
   font-family: 'Delicious Handrawn', cursive;
 }
 
-.bell:hover{
+#bell:hover{
   opacity: 1;
 }
 
-.bell{
+#bell{
   opacity: 0.6;
 }
 
@@ -67,7 +67,7 @@ p {
 
 }
 
-.flag{
+#flag{
   position:relative;
   border: none;
   cursor: pointer;
@@ -80,7 +80,7 @@ p {
   top: 40px;
 }
 
-.flag:hover{
+#flag:hover{
   background: inherit;
   color: rgb(235, 66, 66);
   opacity: 1;
@@ -104,7 +104,7 @@ p {
     transform: translate(-400%);
   }
 
-  .flag{
+  #flag{
     transform: translate(480%);
   }
 }
