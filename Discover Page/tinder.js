@@ -4,6 +4,7 @@ var tinderContainer = document.querySelector('.tinder');
 var allCards = document.querySelectorAll('.tinder--card');
 var nope = document.getElementById('nope');
 var love = document.getElementById('love');
+var counter = 0;
 
 function initCards(card, index) {
   var newCards = document.querySelectorAll('.tinder--card:not(.removed)');
@@ -72,7 +73,7 @@ function createButtonListener(love) {
     var cards = document.querySelectorAll('.tinder--card:not(.removed)');
     var moveOutWidth = document.body.clientWidth * 1.5;
 
-    if (!cards.length) return false;
+    if (!(cards.length-1)) return false;
 
     var card = cards[0];
 
