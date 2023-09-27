@@ -1,102 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover</title>
-    <link rel="stylesheet" href="discover.css">
-    <!-- Link to bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Discover Page/discover.css">
+    <link rel="icon" type="image/x-icon" href="../Assets/paw.png">
 
+    <!-- Linking to Bootstrap, font style, icons and hammer.js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js"></script>
 </head>
-    <!-- Code below is for BACKGROUND -->
-<body style="background-color: pink;">
 
-    <!-- Code below is for NAV BAR -->
-    <!-- Code below is for MATCHMAKING TINDER LAYOUT -->
-    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://i.pinimg.com/236x/b0/2a/03/b02a0360f654e305a4f898e963585a0a.jpg" alt="corgi" width="500" height="500">
-            <!-- Code for Name and Location text -->
-            <div class="text-block">
-              <h4>Max,  2</h4>
-              <p>United Kingdom</p>
-            </div>
-            <!-- Gender -->
-            <div class="gender">
-              <img class="female" src="https://static.vecteezy.com/system/resources/previews/017/178/227/original/female-symbol-isolated-icon-on-transparent-background-free-png.png" alt="female" width="90" height="90">
-            </div>
-          </div>
+<body>
+    <div class="tinder" style="background-color: rgb(250, 218, 224);">
 
-          <div class="carousel-item">
-            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdBbEC_ZLHRGXpN3jhhdWi-vSgbbZZqFBvfzTSo-zVu7qarHQK" alt="stitch shiba doggo" width="500" height="500">
-            <!-- Code for Name and Location text --> 
-            <div class="text-block">
-              <h4>Leo,  1</h4>
-              <p>Northern Ireland</p>
-            </div>
-            <!-- Gender -->
-            <div class="gender">
-              <img class="male" src="https://img.freepik.com/premium-vector/blue-male-gender-symbol_465506-92.jpg" alt="male" width="90" height="90">
-            </div>
-          </div>
+        <!-- Code below is for NAV BAR -->
+        <nav class="navbar navbar-expand-lg bg-light bg-transparent">
+            <div class="container">
+                <!-- brand + logo -->
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../Assets/paw.png" alt="PawDates Logo" width="50" height="50">
+                    <a class="text-decoration-none flex-lg-row px-2 py-1 rounded-4 text-white fs-3"
+                        style="background-color:#67B8F2">
+                        PawDates</a>
+                </a>
 
-          <div class="carousel-item">
-            <img src="https://i.pinimg.com/736x/89/d2/a0/89d2a020da007cdf2529e354c03c2d67.jpg" alt="border collie acting silly" width="500" height="500">
-            <!-- Code for Name and Location text -->
-            <div class="text-block">
-              <h4>Daisy,  4</h4>
-              <p>Wales</p>
-            </div>
-            <!-- Gender -->
-            <div class="gender">
-              <img class="female" src="https://static.vecteezy.com/system/resources/previews/017/178/227/original/female-symbol-isolated-icon-on-transparent-background-free-png.png" alt="female" width="90" height="90">
-            </div>
-          </div>
+                <!-- toggle -->
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-          <div class="carousel-item">
-            <img src="https://i.pinimg.com/736x/b6/7a/6c/b67a6cb5ef5ca72d420921b0b610683a.jpg" alt="Labrador puppy with blanket" width="500" height="500">
-            <div class="text-block">
-              <h4>Cooper,  1</h4>
-              <p>London, United Kingdom</p>
-            </div>
-            <!-- Gender -->
-            <div class="gender">
-              <img class="male" src="https://img.freepik.com/premium-vector/blue-male-gender-symbol_465506-92.jpg" alt="male" width="90" height="90">
-            </div>
-          </div>
+                <!-- SideBar -->
+                <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <!-- SideBar Header -->
+                    <div class="offcanvas-header border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">PawDates</h5>
+                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas"
+                            aria-label="Close">
+                        </button>
+                    </div>
+                    <!-- SideBar Body -->
+                    <div class="offcanvas-body d-flex flex-lg-row flex-column p-4 p-lg-0">
+                        <ul class="navbar-nav justify-content-center align-items-center fs-3 flex-grow-1 pe-3">
 
-          <div class="carousel-item">
-            <img src="https://img.freepik.com/premium-photo/puppy-dog-border-collie-holding-red-rose-flower-mouth-isolated-white-background_80942-3961.jpg?w=2000" alt="Border Collie with Rose" width="500" height="500">
-            <div class="text-block">
-              <h4>Coco,  3</h4>
-              <p>Edinburgh, Scotland</p>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link active" aria-current="page" href="discover.html">Discover</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="../Gallery Page/gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item mx-3">
+                                <a class="nav-link" href="../Chat Page/chat.html">Chat</a>
+                            </li>
+                        </ul>
+                        <!-- Profile pic and notifications -->
+                        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                            <div id="bell">
+                                <a href="#" class="fs-4 text-decoration-none text-black"><i class="bi bi-bell-fill"></i></a>
+                                <a class="nav-link p-0" href="#">
+                            </div>
+                            <div class="profile">
+                                <a href="../Profile Page/myprofile.html">
+                                <img src="https://static.thenounproject.com/png/638636-200.png"
+                                    class="rounded-circle d-flex align-self-center me-3 shadow-1-strong"
+                                    alt="avatar image" width="40" height="40">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Gender -->
-            <div class="gender">
-              <img class="male" src="https://img.freepik.com/premium-vector/blue-male-gender-symbol_465506-92.jpg" alt="male" width="90" height="90">
-            </div>
-          </div>
+        </nav>
 
-        </div>
-    </div>  
-
-    <!-- Code below for Previous and Next buttons -->
-    <div class="buttons">
-        <div class="previous">
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev"><img src="https://www.freeiconspng.com/thumbs/16x16-icon/16x16-x-icon-vector-16.png" alt="heart button" width="130" height="160"></button>
+        <!-- Code below is for Tinder style carousel -->
+        <div class="tinder--status">
+            <i class="bi bi-suit-heart-fill"></i>
+            <i class="bi bi-x-circle-fill"></i>
         </div>
 
-        <div class="next">
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next"><img src="https://cdn.pixabay.com/photo/2020/09/30/07/48/heart-5614865_1280.png" alt="heart button" width="100" height="100"></button>
+        <div class="tinder--cards">
+            <div class="tinder--card">
+                <img src="https://placedog.net/800/640?id=3">
+                <h3>Luna, 2</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> 3 miles away</p>
+                <p><i class="bi bi-gender-female"></i> Female</p>
+            </div>
+            <div class="tinder--card">
+                <img src="https://placedog.net/800/640?id=16">
+                <h3>Cooper, 6</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> 7 miles away</p>
+                <p><i class="bi bi-gender-male"></i> Male</p>
+            </div>
+            <div class="tinder--card">
+                <img src="https://placedog.net/800/640?id=86">
+                <h3>Archie, 3</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> 2 miles away</p>
+                <p><i class="bi bi-gender-male"></i> Male</p>
+            </div>
+            <div class="tinder--card">
+                <img src="https://placedog.net/800/640?id=137">
+                <h3>Rosie, 7</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> 5 miles away</p>
+                <p><i class="bi bi-gender-female"></i> Female</p>
+            </div>
+            <div class="tinder--card">
+                <img src="https://placedog.net/800/640?id=21">
+                <h3>Buster, 3</h3>
+                <p><i class="bi bi-geo-alt-fill"></i> 0.1 miles away</p>
+                <p><i class="bi bi-gender-male"></i> Male</p>
+            </div>
+            <div class="tinder--card">
+                <img src="https://images.unsplash.com/photo-1600077106724-946750eeaf3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80">
+                <h3>Sorry you have reached your limit for today</h3>
+                <p>Please come back tomorrow</p>
+            </div>
+
+        </div>
+
+        <div class="tinder--buttons">
+            <button id="nope"><i class="bi bi-x-circle-fill"></i></button>
+            <button id="love"><i class="bi bi-suit-heart-fill"></i></button>
         </div>
     </div>
 
-    <!-- Code below is for FOOTER -->
-    <!-- Link to bootstrap javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../Discover Page/discover.js"></script>
 
+    <!-- Code below is for FOOTER -->
+    <section class="footer">
+        <footer class="text-center text-white" style="background-color: #67B8F2;">
+            <!-- Grid container -->
+            <div class="container p-3 pb-0">
+                <!-- Section: CTA -->
+                <section class="socials">
+                    <p class="d-flex justify-content-center align-items-center">
+                        <span class="mx-3">
+                            <a href="#"><i class="bi bi-twitter text-white fs-3 mx-2"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-white fs-3 mx-2"></i></a>
+                            <a href="#"><i class=" bi bi-instagram text-white fs-3 mx-2"></i></a>
+                        </span>
+                    </p>
+                </section>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                Copyright &copy 2023 All rights reserved | Made with <i class="bi bi-suit-heart-fill"></i> Tian & Yenny
+            </div>
+        </footer>
+    </section>
+
+    <!-- Link to bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

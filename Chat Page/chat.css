@@ -30,13 +30,19 @@ body {
 
 }
 
+.card{
+  /* font-family: 'Delicious Handrawn', cursive; */
+  letter-spacing: 0.5px;
+  font-size: 15px;
+}
+
 .msger {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  width: 100%;
-  max-width: 867px;
-  margin: 25px 10px;
+  width: 50%;
+  max-width: 850px;
+  /* margin: 25px 20px; */
   height: calc(100% - 50px);
   border: var(--border);
   border-radius: 5px;
@@ -44,6 +50,9 @@ body {
   box-shadow: 0 15px 15px 4px rgba(0, 0, 0, 0.2);
   /* Font Style in Chat Section */
   /* font-family: 'Delicious Handrawn', cursive; */
+  letter-spacing: 0.5px;
+  font-size: 14.5px;
+  margin-left: 30px;
 
 }
 
@@ -59,9 +68,15 @@ body {
 
   /* color: #666; */
   font-size: 20px;
+  letter-spacing: 2px;
   /* Font change */
   font-family: 'Delicious Handrawn', cursive;
+  /* justify-content: center; */
 
+}
+
+.msger-header i{
+  margin: 5px;
 }
 
 .msger-chat {
@@ -143,13 +158,15 @@ body {
 
   /* font change */
   font-family: 'Delicious Handrawn', cursive;
-  
+
 }
 .msger-inputarea * {
   padding: 10px;
   border: none;
   border-radius: 3px;
-  font-size: 1em;
+  /* font-size: 1em; */
+  letter-spacing: 2px;
+  font-size: 18px;
 }
 .msger-input {
   flex: 1;
@@ -169,20 +186,20 @@ body {
 
 .msger-chat {
   background-color: #fcfcfe;
-  background-image: url(/Assets/chat\ background.jpg);
+  background-image: url(../Assets/chat\ background.jpg);
 }
 
 
 /* Messages */
 .title{
   position: relative;
-  transform: translate(0%, 0%);
+  transform: translate(0%, 10%);
   text-align: center;
-  font-size: 25px;
+  font-size: 28px;
   padding-bottom: 20px;
   /* Font style change */
   font-family: 'Delicious Handrawn', cursive;
-
+  letter-spacing: 2px;
 }
 
 .back{

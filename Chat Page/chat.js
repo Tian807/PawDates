@@ -12,7 +12,7 @@ const BOT_MSGS = [
 
 // Icons made by Freepik from www.flaticon.com
 const BOT_IMG = "https://cdn-icons-png.flaticon.com/512/4712/4712009.png";
-const PERSON_IMG = "/Assets/paw.png";
+const PERSON_IMG = "../Assets/paw.png";
 const BOT_NAME = "BOT";
 const PERSON_NAME = "PawDates";
 
